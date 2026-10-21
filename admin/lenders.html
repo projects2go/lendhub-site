@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>LendHub Admin — Administration for private lenders</title>
+<meta name="robots" content="noindex, nofollow"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="../favicon.ico">
+</head>
+<body><div style="background:#1A4790;color:#fff;font:600 12px Poppins,Lato,Arial,sans-serif;text-align:center;padding:6px 12px;letter-spacing:.06em">PREVIEW — NOT LIVE — FOR INTERNAL AND FSRA REVIEW · items in [BRACKETS] are unverified placeholders</div>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,600&family=Lato:wght@400;700&display=swap">
+<style>
+body{margin:0;background:#FFFFFF;color:#14345C;font-family:Lato,'Segoe UI',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#1A4790}a:hover{color:#14345C}
+h1,h2,h3{font-family:Poppins,Lato,Arial,sans-serif}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;border-radius:999px;font-family:Poppins,sans-serif;font-weight:600;font-size:16px;text-decoration:none;box-sizing:border-box}
+.btn-navy{background:#14345C;color:#FFFFFF;border:2px solid #14345C}.btn-navy:hover{background:#1A4790;color:#FFFFFF}
+.btn-ghost{background:#FFFFFF;color:#14345C;border:2px solid #14345C}.btn-ghost:hover{background:#E8F0F8;color:#14345C}
+.btn-white{background:#FFFFFF;color:#14345C;border:2px solid #FFFFFF}.btn-white:hover{background:#E8F0F8;color:#14345C}
+.pill{display:inline-block;background:#4C6CB4;color:#FFFFFF;font-family:Poppins,sans-serif;font-style:italic;font-weight:600;font-size:14px;padding:8px 18px;border-radius:999px}
+.nav a{color:#14345C;text-decoration:none;font-weight:700;font-size:15px}.nav a:hover{color:#4C6CB4}
+.card{background:#FFFFFF;border:1px solid #C8D8F0;border-radius:16px;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;gap:12px}
+.card h3{margin:0;font-size:20px;font-weight:700;color:#14345C}
+.card p{margin:0;font-size:15px;line-height:1.55;color:#14345C}
+.lbl{font-family:Poppins,sans-serif;font-weight:600;font-size:13px;color:#4C6CB4;font-style:italic}
+.cl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.cl li{position:relative;padding-left:34px;font-size:16px;line-height:1.5;color:#1A4790}
+.cl li::before{content:"";position:absolute;left:0;top:11px;width:18px;height:2px;background:#7C7C7C}
+.cl li::after{content:"";position:absolute;left:16px;top:6px;width:8px;height:8px;border-radius:50%;background:#4C6CB4;border:2px solid #4C6CB4}
+@media (max-width:860px){.nav{display:none}.g3{grid-template-columns:1fr !important}.g2{grid-template-columns:1fr !important}.hero{grid-template-columns:1fr !important}.footrow{flex-direction:column !important}}
+</style>
+
+
+<div style="width:100%; min-height:772px; display:flex; flex-direction:column; box-sizing:border-box; background:#FFFFFF">
+
+<!-- NAV -->
+<header style="border-bottom:1px solid #E8F0F8; background:#FFFFFF">
+<div style="max-width:1200px; margin:0 auto; padding:18px 24px; display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap">
+<a href="index.html" style="display:flex; align-items:center; gap:12px; text-decoration:none" aria-label="LendHub Admin home"><img src="../assets/lendhub-logo.png" alt="LendHub" style="height:40px; width:auto"><span style="font-family:Poppins,sans-serif; font-weight:600; font-size:22px; color:#7C7C7C; border-left:2px solid #C8D8F0; padding-left:12px; line-height:1">Admin</span></a>
+<nav class="nav" style="display:flex; gap:22px; align-items:center" aria-label="Main">
+<a href="index.html">Borrowers</a>
+<a href="index.html">Brokers &amp; lawyers</a>
+<a href="index.html">Investors</a>
+<a href="#top" style="color:#4C6CB4">For private lenders</a>
+<a href="index.html">About</a>
+</nav>
+<a href="#book" class="btn btn-navy">Book a call</a>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="top" style="position:relative; overflow:hidden; background:linear-gradient(180deg,#FFFFFF 0%,#E8F0F8 100%)">
+<svg aria-hidden="true" viewBox="0 0 1440 420" preserveAspectRatio="none" style="position:absolute; left:0; right:0; bottom:0; width:100%; height:220px; display:block">
+<path d="M0 300 C 240 200, 420 380, 720 290 S 1200 180, 1440 260 L1440 420 L0 420 Z" fill="#C8D8F0" opacity="0.55"></path>
+<path d="M0 350 C 300 280, 520 400, 820 330 S 1240 250, 1440 320 L1440 420 L0 420 Z" fill="#4C6CB4" opacity="0.18"></path>
+</svg>
+<div class="hero" style="position:relative; max-width:1200px; margin:0 auto; padding:64px 24px 100px; display:grid; grid-template-columns:7fr 5fr; gap:48px; align-items:center">
+<div style="display:flex; flex-direction:column; gap:20px">
+<span class="pill" style="align-self:flex-start">Mortgage administration for private lenders and investors</span>
+<h1 style="margin:0; font-size:46px; line-height:1.12; font-weight:700; color:#14345C">You hold the mortgage. We run it.</h1>
+<p style="margin:0; font-size:18px; line-height:1.55; color:#14345C; max-width:580px">Licensed administration for private mortgages you already own or are about to fund: payment collection, trust accounting, arrears, payouts and discharges, with reporting you can hand to your accountant. Built on the same desk that services every LendHub mortgage.</p>
+<div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:4px">
+<a href="#book" class="btn btn-navy">Book a 20-minute call</a>
+<a href="#what" class="btn btn-ghost">What's included</a>
+</div>
+<p style="margin:4px 0 0; font-size:13px; color:#7C7C7C">FSRA-licensed Mortgage Administrator, Licence #[____]. We administer; we do not lend to you, advise on investments or sell mortgages.</p>
+</div>
+<div class="card" style="background:#14345C; border:none; gap:14px">
+<div class="lbl" style="color:#C8D8F0">Who this is for</div>
+<ul class="cl" style="gap:12px">
+<li style="color:#FFFFFF; font-size:15px">Individuals holding one or more private mortgages</li>
+<li style="color:#FFFFFF; font-size:15px">Family offices and holding companies lending on real estate</li>
+<li style="color:#FFFFFF; font-size:15px">MICs and syndicates that want servicing off their desk</li>
+<li style="color:#FFFFFF; font-size:15px">Lawyers administering client-held mortgages</li>
+<li style="color:#FFFFFF; font-size:15px">Brokerages with an in-house lending book</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section id="what" style="background:#FFFFFF">
+<div style="max-width:1200px; margin:0 auto; padding:80px 24px; display:flex; flex-direction:column; gap:32px">
+<div style="display:flex; flex-direction:column; gap:12px; max-width:720px">
+<span class="pill" style="align-self:flex-start">What's included</span>
+<h2 style="margin:0; font-size:36px; line-height:1.15; font-weight:700; color:#14345C">Everything after funding.</h2>
+</div>
+<div class="g3" style="display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px">
+<div class="card"><div class="lbl">Collection</div><h3>Payments and trust</h3><p>Pre-authorized debit on the due date, held in a regulated trust account, remitted to you on a fixed schedule with a statement.</p></div>
+<div class="card"><div class="lbl">Arrears</div><h3>NSF and default handling</h3><p>Same-day NSF follow-up, late-fee application per the mortgage, formal notices, and coordination with counsel if enforcement is needed. You decide; we execute.</p></div>
+<div class="card"><div class="lbl">Term end</div><h3>Maturity and renewals</h3><p>Maturity notices [60–90 VERIFY] days out. Renewal paperwork on your terms, or payout management if the borrower is leaving.</p></div>
+<div class="card"><div class="lbl">Closing out</div><h3>Payouts and discharges</h3><p>Payout statements to the solicitor on request, certified-funds confirmation, discharge registered and confirmed to you.</p></div>
+<div class="card"><div class="lbl">Reporting</div><h3>Statements and tax</h3><p>Online portal, monthly remittance statement, annual summary and year-end interest reporting for your accountant. [VERIFY T5 handling]</p></div>
+<div class="card"><div class="lbl">Borrower contact</div><h3>We take the calls</h3><p>Borrowers deal with our servicing desk, not with you. One number, business-hours coverage, written record of every contact.</p></div>
+</div>
+</div>
+</section>
+
+<!-- WHY -->
+<section style="background:#E8F0F8">
+<div class="g2" style="max-width:1200px; margin:0 auto; padding:80px 24px; display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start">
+<div style="display:flex; flex-direction:column; gap:16px">
+<span class="pill" style="align-self:flex-start">Why a licensed administrator</span>
+<h2 style="margin:0; font-size:36px; line-height:1.15; font-weight:700; color:#14345C">The parts that go wrong without one.</h2>
+<ul class="cl">
+<li>Borrower payments mixed with personal funds, no trust segregation</li>
+<li>Missed NSFs that become 90-day arrears before anyone notices</li>
+<li>Maturity dates passing with no notice, no renewal, no payout plan</li>
+<li>Discharge paperwork that holds up a sale</li>
+<li>Year-end interest figures rebuilt from a chequing account</li>
+</ul>
+</div>
+<div style="display:flex; flex-direction:column; gap:16px">
+<div class="card"><div class="lbl">Scale</div><h3>Built on an active book</h3><p>The same desk, systems and trust account that service every mortgage LendHub funds. [VERIFY: number of mortgages under administration] You are not the first file through the process.</p></div>
+<div class="card"><div class="lbl">Transfer</div><h3>Moving an existing mortgage to us</h3><p>Send the mortgage, the amortization schedule and the borrower's contact details. We onboard the borrower, set up PAD and confirm the first collection date to you in writing. [VERIFY onboarding time]</p></div>
+</div>
+</div>
+</section>
+
+<!-- BOOK -->
+<section id="book" style="background:#14345C; color:#FFFFFF">
+<div class="g2" style="max-width:1200px; margin:0 auto; padding:80px 24px; display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center">
+<div style="display:flex; flex-direction:column; gap:16px">
+<span class="pill" style="align-self:flex-start; background:#4C6CB4">Next step</span>
+<h2 style="margin:0; font-size:36px; line-height:1.15; font-weight:700">Twenty minutes. Bring the mortgage.</h2>
+<p style="margin:0; font-size:17px; line-height:1.6; color:#E8F0F8">We will walk through what you hold, how it is paying today, and what administration would look like. Fees depend on the number of mortgages and what you need from us, so we quote after the call, in writing.</p>
+<p style="margin:0; font-size:13px; line-height:1.6; color:#C8D8F0">The call is a service discussion. It is not investment advice, and nothing about it is an offer of mortgages or mortgage investments.</p>
+</div>
+<div class="card" style="gap:16px">
+<div style="font-family:Poppins,sans-serif; font-weight:700; font-size:22px; color:#14345C">Book a call</div>
+<label style="display:flex; flex-direction:column; gap:6px; font-size:14px; font-weight:700; color:#14345C">Name<input type="text" style="min-height:46px; border:1px solid #C8D8F0; border-radius:10px; padding:0 14px; font-size:16px; font-family:Lato,sans-serif"></label>
+<label style="display:flex; flex-direction:column; gap:6px; font-size:14px; font-weight:700; color:#14345C">Company (if any)<input type="text" style="min-height:46px; border:1px solid #C8D8F0; border-radius:10px; padding:0 14px; font-size:16px; font-family:Lato,sans-serif"></label>
+<label style="display:flex; flex-direction:column; gap:6px; font-size:14px; font-weight:700; color:#14345C">Email<input type="email" style="min-height:46px; border:1px solid #C8D8F0; border-radius:10px; padding:0 14px; font-size:16px; font-family:Lato,sans-serif"></label>
+<label style="display:flex; flex-direction:column; gap:6px; font-size:14px; font-weight:700; color:#14345C">Phone<input type="tel" style="min-height:46px; border:1px solid #C8D8F0; border-radius:10px; padding:0 14px; font-size:16px; font-family:Lato,sans-serif"></label>
+<label style="display:flex; flex-direction:column; gap:6px; font-size:14px; font-weight:700; color:#14345C">How many mortgages, and roughly what balance?<input type="text" style="min-height:46px; border:1px solid #C8D8F0; border-radius:10px; padding:0 14px; font-size:16px; font-family:Lato,sans-serif"></label>
+<button type="button" class="btn btn-navy" style="border:none; cursor:pointer">Request a call</button>
+<p style="margin:0; font-size:12px; color:#7C7C7C">Or call 1.800.675.7957 [VERIFY] and ask for the administration desk. [Booking link: Calendly/HubSpot — VERIFY]</p>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#E8F0F8; color:#14345C">
+<div class="footrow" style="max-width:1200px; margin:0 auto; padding:40px 24px; display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap">
+<div style="display:flex; flex-direction:column; gap:10px; max-width:680px">
+<div style="display:flex; align-items:center; gap:12px"><img src="../assets/lendhub-logo.png" alt="LendHub" style="height:30px; width:auto"><span style="font-family:Poppins,sans-serif; font-weight:600; font-size:18px; color:#7C7C7C; border-left:2px solid #C8D8F0; padding-left:10px; line-height:1">Admin</span></div>
+<div style="font-size:14px; line-height:1.6">[LENDHUB ADMIN LEGAL NAME] operating as LendHub Admin · Mortgage Administrator · FSRA Licence #[____]</div>
+<div style="font-size:13px; line-height:1.6; color:#7C7C7C">LendHub Admin administers mortgages funded by LendHub ([LEGAL CORPORATE NAME]), a related private mortgage lender under common ownership, and mortgages held by third-party lenders and investors. LendHub Admin does not arrange, approve, advertise or sell mortgages or mortgage investments. Administration fees are quoted in writing after consultation.</div>
+<div style="font-size:13px; color:#7C7C7C"><a href="#">Privacy policy</a> · <a href="#">Accessibility</a> · <a href="#">Terms of use</a> · <a href="https://lend-hub.ca">lend-hub.ca (brokers)</a></div>
+</div>
+<div style="display:flex; flex-direction:column; gap:6px; font-size:15px">
+<a href="tel:+18006757957" style="text-decoration:none; font-weight:700">1.800.675.7957 [VERIFY]</a>
+<a href="mailto:admin@lend-hub.ca" style="text-decoration:none">admin@lend-hub.ca [VERIFY]</a>
+<span style="color:#7C7C7C">[STREET ADDRESS]<br>[CITY], Ontario [POSTAL]</span>
+</div>
+</div>
+</footer>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>LendHub — Broker access</title>
+<meta name="robots" content="noindex, nofollow"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="favicon.ico">
+</head>
+<body><div style="background:#1A4790;color:#fff;font:600 12px Poppins,Lato,Arial,sans-serif;text-align:center;padding:6px 12px;letter-spacing:.06em">PREVIEW — NOT LIVE — FOR INTERNAL AND FSRA REVIEW · items in [BRACKETS] are unverified placeholders</div>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,600&family=Lato:wght@400;700&display=swap">
+<style>
+body{margin:0;background:#E8F0F8;color:#14345C;font-family:Lato,'Segoe UI',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#1A4790}a:hover{color:#14345C}
+</style>
+
+<div style="width:100%; min-height:100vh; box-sizing:border-box; position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center; padding:48px 16px; background:linear-gradient(180deg,#FFFFFF 0%,#E8F0F8 100%)">
+<svg aria-hidden="true" viewBox="0 0 1440 420" preserveAspectRatio="none" style="position:absolute; left:0; right:0; bottom:0; width:100%; height:240px; display:block">
+<path d="M0 300 C 240 200, 420 380, 720 290 S 1200 180, 1440 260 L1440 420 L0 420 Z" fill="#C8D8F0" opacity="0.55"></path>
+<path d="M0 350 C 300 280, 520 400, 820 330 S 1240 250, 1440 320 L1440 420 L0 420 Z" fill="#4C6CB4" opacity="0.18"></path>
+</svg>
+<div style="position:relative; width:100%; max-width:460px; background:#FFFFFF; border:1px solid #C8D8F0; border-radius:20px; padding:40px; box-sizing:border-box; display:flex; flex-direction:column; gap:20px">
+<img src="assets/lendhub-logo.png" alt="LendHub" style="height:44px; width:auto; align-self:flex-start">
+<span style="display:inline-block; align-self:flex-start; background:#4C6CB4; color:#FFFFFF; font-family:Poppins,sans-serif; font-style:italic; font-weight:600; font-size:13px; padding:7px 16px; border-radius:999px">Brokers and Level 2 mortgage agents only</span>
+<h1 style="margin:0; font-family:Poppins,sans-serif; font-weight:700; font-size:28px; line-height:1.2; color:#14345C">Broker access</h1>
+<p style="margin:0; font-size:15px; line-height:1.6; color:#14345C">This site is restricted to licensed Ontario mortgage brokers and Level 2 mortgage agents acting through a licensed brokerage. It contains business-to-business lending information and is not intended for borrowers or the public.</p>
+<form onsubmit="return go(event)" style="display:flex; flex-direction:column; gap:14px">
+<label style="display:flex; flex-direction:column; gap:6px; font-size:14px; font-weight:700; color:#14345C">Access code<input id="code" type="password" autocomplete="off" required style="min-height:48px; border:1px solid #C8D8F0; border-radius:10px; padding:0 14px; font-size:16px; font-family:Lato,sans-serif"></label>
+<label style="display:flex; gap:10px; align-items:flex-start; font-size:13px; line-height:1.5; color:#14345C"><input id="att" type="checkbox" required style="margin-top:3px; width:18px; height:18px"><span>I confirm I am a licensed Ontario mortgage broker or Level 2 mortgage agent and I am not a borrower.</span></label>
+<button type="submit" style="min-height:48px; border:none; border-radius:999px; background:#14345C; color:#FFFFFF; font-family:Poppins,sans-serif; font-weight:600; font-size:16px; cursor:pointer">Enter</button>
+</form>
+<p style="margin:0; font-size:13px; line-height:1.6; color:#7C7C7C">Need a code? Email <a href="mailto:info@lend-hub.ca">info@lend-hub.ca</a> from your brokerage address with your FSRA licence number, or call 1.800.675.7957.</p>
+<p style="margin:0; font-size:12px; line-height:1.6; color:#7C7C7C">[LEGAL CORPORATE NAME] operating as LendHub. Private mortgage lender, Ontario. Mortgages administered by [LENDHUB ADMIN LEGAL NAME], Mortgage Administrator, FSRA Licence #[____], a related company. Not directed at the public. Borrowers should contact their mortgage broker.</p>
+</div>
+</div>
+
+
+<script>function go(e){e.preventDefault();if(document.getElementById("code").value==="broker2026"){sessionStorage.setItem("lh_gate","1");location.href="confirm.html"}else{alert("Access code not recognized.")}}</script></body>
+</html>
